@@ -1,0 +1,17 @@
+/**********************************
+     Quiz
+**********************************/
+
+	.wrong_answer{
+		background: red;
+		border: 1px solid green;
+		color:white;
+		padding:10px;
+	}
+	.correct_answer{
+		background:green;
+		border:1px solid orange;
+	}
+	label{
+		display:block;
+	}
