@@ -93,11 +93,22 @@ window.onload = function(){
 // Display the number of correct answers in the above H2 header
 // out of all questions.
 			quiz_results.innerHTML = 'You answered correcty to ' + correct_answers_chosen + ' questions out of ' + correct_answers.length;
-// We set the correct_answers_chose variable equal to 0 since we do not
+// We set the correct_answers_chosen variable equal to 0 and we disable the submit button
+// since we do not
 // want the variable to keep incrementing if the user clicks the submit button
 // like a crazy duck.
 			correct_answers_chosen = 0;
+			submit_button.disabled = true;
+// We also make the "Take this quiz again" button on the 
+// right of the screen visible as well
+// so that the user won't wonder where the hell to click
+// if he/she wants to take the quiz again because it is awesome.
+		reload_quiz.style.display = 'inline';
+	}
+// We make it so that when the user clicks the "Take this quiz again"
+// the page reloads.
+		reload_quiz.onclick = function(){
+			location.reload();
 		}
-		
 	}
 // __END__

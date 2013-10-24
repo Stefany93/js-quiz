@@ -15,3 +15,7 @@
 	label{
 		display:block;
 	}
+	#reload_quiz{
+		float:right;
+		display:none;
+	}
